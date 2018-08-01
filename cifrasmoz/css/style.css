@@ -1,0 +1,625 @@
+/* 
+ *  Created on : Jun 21, 2018
+ *  Author     : Zacarias Jorge Torrezão
+ * 	Costum CSS file for Cifras Moz's website
+ *	Copyright © 2018 Cifras Moz
+ */
+
+
+/*=== Importing OpenSans fonts to the project ===*/
+/*	
+	font-family: OpenSans_*;
+	Where * can be replaced with:
+	l 		Light
+	li 		LightItalic
+	rg 		Regular
+	sbd 	Semibold
+	sbdi 	SemiboldItalic
+	bd 		Bold
+	bdi 	BoldItalic
+	xbd 	ExtraBold
+	xbdi 	ExtraBoldItalic
+ */
+
+@font-face {
+	font-family: OpenSans_l;
+	src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_li;
+	src: url("../fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_rg;
+	src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_sbd;
+	src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_sbdi;
+	src: url("../fonts/OpenSans-SemiboldItalic.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_i;
+	src: url("../fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_bd;
+	src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_bdi;
+	src: url("../fonts/OpenSans-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_xbd;
+	src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_xbdi;
+	src: url("../fonts/OpenSans-ExtraBoldItalic.ttf");
+}
+
+@font-face{
+	font-family: Lato_l;
+	src: url("../fonts/Lato-Light.ttf");
+}
+
+
+/* setting the default properties */
+* {
+	transition: .18s ease-in-out;
+	-ms-transition: .18s ease-in-out;
+	-moz-transition: .18s ease-in-out;
+	-webkit-transition: .18s ease-in-out;
+	-vendor-transition: .18s ease-in-out;
+	-o-transition: .18s ease-in-out;
+	-webkit-text-size-ajust: none;
+}
+
+body {
+	font-family: OpenSans_rg, sans-serif;
+	color: #1f1f1f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: OpenSans_bd, sans-serif;
+}
+
+h1 {
+	font-size: 1.53rem;
+}
+
+h2 {
+	font-size: 0.9456118665018541rem;
+}
+
+h3 {
+	font-size: 0.5844325503719741rem;
+}
+
+h6 {
+	font-size: .72rem;
+}
+
+
+.text-dot-9 {
+	font-size: .9rem;
+}
+
+.text-light {
+	font-family: OpenSans_l, sans-serif;
+}
+
+
+a.link-dark {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+	/*a.link-dark:hover {
+		color: #f7941e;
+	}*/
+
+a.link-primary {
+	color: #f7941e;
+	text-decoration: none;
+}
+	a.link-primary:hover {
+		color: #DD851B;
+}
+
+
+
+/*----------- bootstrap overrides ---------------- */
+/*navbar defaults*/
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: #f7941e;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #1f1f1f;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #f7941e;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .9rem;
+    padding-left: .9rem;
+}
+
+/* navs */
+.navbar-nav .nav-item > a {
+    font-family: OpenSans_bd, sans-serif;
+    font-size: .81rem;
+
+}
+
+.navbar-light .navbar-toggler {
+   border: none;
+}
+
+
+/* buttons overrids */
+.btn {
+	font-size: 0.938rem;
+}
+
+.btn-outline-white {
+	color: #fff !important;
+	border-color: #fff !important;
+	background-color: rgba(0,0,0,0);
+}
+
+.btn-outline-white.btn-lg {
+	font-weight: 600;
+}
+	.btn-outline-white:hover {
+		background-color: #DD851B !important;
+	}
+
+.btn-outline-primary {
+	color: #f7941e !important;
+	border-color: #f7941e !important;
+}
+	.btn-outline-primary:hover {
+		color: #fff !important;
+		background-color: #f7941e !important;
+	}
+
+.btn-primary {
+	color: #fff !important;
+	background-color: #f7941e !important;
+	border-color: #f7941e !important;
+}
+	.btn-primary:hover {
+		background-color: #DD851B !important;
+	}
+
+.btn-primary.focus, 
+.btn-primary:focus, 
+.btn-outline-primary.focus, 
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.13rem rgba(247, 148, 30, .18);
+}
+
+button:focus {
+    outline: 1px dotted;
+     outline: none; 
+}
+
+/* inputs */
+.form-control {
+	font-size: 0.938rem;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #a6a6a6;
+	opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+	color: #a6a6a6;
+	opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #a6a6a6;
+	opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+	color: #a6a6a6;
+	opacity: 1;
+}
+
+.form-control::placeholder {
+	color: #a6a6a6;
+	opacity: 1;
+}
+
+.form-control:focus {
+    border-color: #f7941e;
+    box-shadow: 0 0 0 0.12rem rgba(247, 148, 30, .18);
+}
+
+
+
+
+
+
+/* ----------- usefull properties --------------------- */
+/* text */
+.text-light-cm {
+	font-family: OpenSans_rg, sans-serif;
+	font-size: 0.819rem;
+}
+
+/* colors */
+.color-white {
+	color: #f7941e !important;
+}
+
+.color-primary {
+	color: #f7941e !important;
+}
+
+.color-primary-light {
+	color: #fcb040 !important;
+}
+
+.bg-primary-cm {
+	color: #fff !important;
+	background-color: #f7941e !important;
+	border-color: #f7941e !important;
+}
+
+.bg-primary-light {
+	background-color: #fcb040;
+}
+
+.bg-semi-light-cm {
+	background-color: #ededed;
+}
+
+.bg-light-cm {
+	background-color: #f2f2f2;
+}
+
+/* borders */
+.border-top-thicker {
+	border-top: solid 0.375rem #f7941e;
+}
+
+.rounded-3 {
+	border-radius: 3rem;
+}
+
+/* ---------------- styles ------------- */
+.banner {
+    padding-top: 9.9rem;
+    padding-bottom: 3rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-bg-3 {
+    background-image: url(../img/Art3BannerOrange.jpg);
+}
+
+.banner-bg-2 {
+    background-image: url(../img/Art2BannerTail.jpg);
+}
+
+.banner-bg-1 {
+    background-image: url(../img/Art1BannerGreen.jpg);
+}
+
+.banner-bg-4 {
+    background-image: url(../img/Art4BannerBrown.jpg);
+}
+
+.banner-bg-5 {
+    background-image: url(../img/Art5BannerYellow.jpg);
+}
+
+	.banner h1, .banner .btn {
+		font-family: OpenSans_bd, sans-serif;
+		color: #fff;
+	}
+
+	/*.banner h1 {
+		font-size: 1.53rem;
+	}*/
+
+	.banner .btn {
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+	}
+
+	/* slide navegation*/
+	.slide-nav {
+		font-size: 2.4rem;
+		color: #fff;
+		top: 30%;
+		z-index: 100;
+
+	}
+
+		.slide-prev, .slide-next {
+			position: absolute;
+			opacity: .6;
+			font-size: 2rem;
+		}
+
+		.slide-prev:hover, .slide-next:hover {
+			opacity: 1;
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+
+		.slide-prev {
+			left: 1rem;
+		}
+
+
+		.slide-next {
+			right: 1rem;
+		}
+
+
+/* secction artistas acessadas */
+
+.ranking-lg2 {
+	font-size: 2.1rem;
+	color: #fff;
+	font-family: OpenSans_bd;
+	background-color: #f7941e;
+	width: 5rem;
+    padding: 1.26rem 0;
+}
+
+/*.ranking-lg3 {
+	font-size: 2.1rem;
+	color: #fff;
+	font-family: OpenSans_bd;
+	background-color: #f7941e;
+	width: 5rem;
+    padding: 1.26rem 0;
+    left: 1.6rem;
+    border-radius: 0 0 50% 50%;
+}*/
+
+.ranking-lg3 {
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: OpenSans_bd;
+    background-color: #f7941e;
+    width: 5rem;
+    padding: 0.6rem 0;
+    left: 1.6rem;
+    border-radius: 0 0 50% 50%;
+    max-width: 3.9rem;
+}
+
+
+.ranking-lg4 {
+	font-size: 2.1rem;
+	color: #fff;
+	font-family: OpenSans_bd;
+	background-color: #f7941e;
+	width: 5rem;
+    padding: 1.26rem 0;
+    top: 21%;
+    border-radius: 0 50% 50% 0;
+}
+
+.ranking-lg5 {
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: OpenSans_bd;
+    background-color: #f7941e;
+    width: 5rem;
+    padding: 1.26rem 0;
+    top: 0%;
+    border-radius: 0% 0 50% 50%;
+}
+
+.ranking-lg6 {
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: OpenSans_bd;
+    background-color: #f7941e;
+    width: 5rem;
+    padding: 1.26rem 0;
+    top: 0%;
+    border-radius: 0% 50% 50%;
+}
+
+
+.ranking-lg1 {
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: OpenSans_bd;
+    width: 5rem;
+    padding: 1.26rem 0;
+    background-color: #f7941e;
+    border-radius: 50%;
+    top: 21%;
+    left: 1.6rem;
+}
+
+.ranking-pop {
+    font-size: 4.8rem;
+    color: #cacaca;
+    font-family: OpenSans_bd, sans-serif;
+/*    padding: 0 .6rem 0 0;
+*/    line-height: .79;
+}
+
+.ranking-star {
+	font-size: .9rem;
+	color: #aeaeae;
+}
+
+.ranking-star.checked {
+	color: #f7cf1a;
+}
+
+/* ad blocks*/
+
+.ad {
+	background-color: #c7c7c7;
+}
+
+.ad.landscape {
+	min-height: 5.625rem;
+}
+
+
+/* subscribe and videos*/
+.control-row {
+	min-height: 1.875rem;
+	margin-bottom: .6rem;
+}
+
+	.control-select {
+	    font-size: .8rem;
+	    height: 24px;
+	}
+
+
+/* footer*/
+.abc-nav > a {
+	color: #1f1f1f;
+	text-decoration: none;
+	font-family: "OpenSans_bd", sans-serif;
+	padding-left: .7rem;
+	padding-right: .7rem;
+}
+
+.abc-nav>a:hover {
+	color: #f7941e;
+}
+
+.abc-nav {
+	justify-content: center;
+}
+
+.vertical-nav > .nav-link {
+	width: fit-content;
+}
+
+
+.vertical-nav > span.nav-link {
+	font-family: "OpenSans_bd", sans-serif;
+	padding-bottom: .4rem;
+}
+
+.vertical-nav > a.nav-link {
+	color: #1f1f1f;
+	text-decoration: none;
+	padding-bottom: .2rem;
+	font-size: 0.9rem;
+}
+
+.vertical-nav > a.nav-link:hover {
+	color: #f7941e;
+}
+
+
+/* social icon*/
+.social-icon {
+    /*background: #a9a9a9;*/
+    padding: 9px;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    height: 36px;
+    width: 36px;
+    margin-right: .6rem;
+}
+
+	.fa-facebook-f.social-icon {
+		background-color: #4267b2;
+	}
+
+	.fa-twitter.social-icon {
+		background-color: #1da1f2;
+	}
+
+	.fa-instagram.social-icon {
+		background-color: #7232bd;
+	}
+
+	.fa-google-plus-g.social-icon {
+		background-color: #db4437;
+	}
+
+	.fa-youtube.social-icon {
+		background-color: #ff0000;
+	}
+/*.w-18 {
+	width: 18% !important;
+}*/
+
+.ad.portatil {
+		height: 5.625rem
+	}
+
+/* ---- Resposive stuff ---- */
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px){
+	/*.ad.portatil {
+		height: 5.625rem
+	}*/
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+	.pl-lg-p5 {
+		padding-left: .5rem !important;
+	}
+
+	.w-lg-18 {
+		width: 18% !important;
+	}
+
+	.media-body.cf-acessadas {
+		/*max-width: 11.438rem !important;*/
+	}
+
+	.ad.portatil {
+		height: 33.875rem;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+	
+	}
+}
+
+
