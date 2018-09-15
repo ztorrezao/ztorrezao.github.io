@@ -1,4 +1,4 @@
-/* 
+/*
  *  Created on : Jun 21, 2018
  *  Author     : Zacarias Jorge Torrezão
  * 	Costum CSS file for Cifras Moz's website
@@ -7,7 +7,7 @@
 
 
 /*=== Importing OpenSans fonts to the project ===*/
-/*	
+/*
 	font-family: OpenSans_*;
 	Where * can be replaced with:
 	l 		Light
@@ -178,6 +178,10 @@ a.link-primary {
 	font-size: 0.938rem;
 }
 
+.btn-sm {
+  font-size: 0.81rem;
+}
+
 .btn-outline-white {
 	color: #fff !important;
 	border-color: #fff !important;
@@ -200,6 +204,12 @@ a.link-primary {
 		background-color: #f7941e !important;
 	}
 
+.btn-outline-secondary:hover {
+	color: #f7941e !important;
+	background-color: #f2f2f2 !important;
+	border-color: #f7941e !important;
+}
+
 .btn-primary {
 	color: #fff !important;
 	background-color: #f7941e !important;
@@ -209,16 +219,16 @@ a.link-primary {
 		background-color: #DD851B !important;
 	}
 
-.btn-primary.focus, 
-.btn-primary:focus, 
-.btn-outline-primary.focus, 
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-outline-primary.focus,
 .btn-outline-primary:focus {
     box-shadow: 0 0 0 0.13rem rgba(247, 148, 30, .18);
 }
 
 button:focus {
     outline: 1px dotted;
-     outline: none; 
+     outline: none;
 }
 
 /* inputs */
@@ -318,23 +328,23 @@ button:focus {
 }
 
 .banner-bg-3 {
-    background-image: url(../img/Art3BannerOrange.jpg);
+    background-image: url(../img/artistas.jpg);
 }
 
 .banner-bg-2 {
-    background-image: url(../img/Art2BannerTail.jpg);
+    background-image: url(../img/artistas.jpg);
 }
 
 .banner-bg-1 {
-    background-image: url(../img/Art1BannerGreen.jpg);
+    background-image: url(../img/artistas.jpg);
 }
 
 .banner-bg-4 {
-    background-image: url(../img/Art4BannerBrown.jpg);
+    background-image: url(../img/artistas.jpg);
 }
 
 .banner-bg-5 {
-    background-image: url(../img/Art5BannerYellow.jpg);
+    background-image: url(../img/artistas.jpg);
 }
 
 	.banner h1, .banner .btn {
@@ -472,12 +482,12 @@ button:focus {
 }
 
 .ranking-star {
-	font-size: .9rem;
+	font-size: .81rem;
 	color: #aeaeae;
 }
 
 .ranking-star.checked {
-	color: #f7cf1a;
+	color: #f7941e;
 }
 
 /* ad blocks*/
@@ -541,10 +551,41 @@ button:focus {
 	color: #f7941e;
 }
 
+/* Single cifra page */
+.cifra-option-btn {
+	font-size: .99rem;
+	color: #6c757d;
+	margin-right: .6rem;
+}
+	.cifra-option-btn:hover {
+		color: #f7941e;
+	}
 
+.cifra-type {
+	font-size: .88rem;
+}
+
+.lyric-section b {
+	font-family: OpenSans_bd, sans-serif !important;
+	color: #f7941e !important;
+	position: relative;
+	top: -1.5rem;
+	font-size: 1.08rem;
+	text-decoration: none;
+}
+
+.lyric-section p {
+	line-height: 3rem;
+}
+
+.video-cifras {
+	width: 100%;
+	height: 27%;
+	background-color: #c7c7c7;
+}
 /* social icon*/
 .social-icon {
-    /*background: #a9a9a9;*/
+    background: #f7941e;
     padding: 9px;
     font-size: 1rem;
     border-radius: 50%;
@@ -555,23 +596,23 @@ button:focus {
     margin-right: .6rem;
 }
 
-	.fa-facebook-f.social-icon {
+	.fa-facebook-f.social-icon:hover {
 		background-color: #4267b2;
 	}
 
-	.fa-twitter.social-icon {
+	.fa-twitter.social-icon:hover {
 		background-color: #1da1f2;
 	}
 
-	.fa-instagram.social-icon {
+	.fa-instagram.social-icon:hover {
 		background-color: #7232bd;
 	}
 
-	.fa-google-plus-g.social-icon {
+	.fa-google-plus-g.social-icon:hover {
 		background-color: #db4437;
 	}
 
-	.fa-youtube.social-icon {
+	.fa-youtube.social-icon:hover {
 		background-color: #ff0000;
 	}
 /*.w-18 {
@@ -618,8 +659,6 @@ button:focus {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
-	
+
 	}
 }
-
-
