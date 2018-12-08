@@ -1,10 +1,11 @@
-# I'm Zacarias Jorge Torrezão
+# My Resumé
+## I'm Zacarias Jorge Torrezão
 A **Software Developer** ...
-## My Education
+### My Education
 ....
-## My Experience
+### My Experience
 ....
-## My Dev Stack
+### My Dev Stack
 * HTML
 * CSS
 * JS
