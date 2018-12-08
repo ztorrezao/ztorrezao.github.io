@@ -10,7 +10,6 @@ A **Software Developer** ...
 * JS
 * React.js
 * Node.js
+* Java
 * PHP
-* Joomla
-* WordPress
 * Etc...
