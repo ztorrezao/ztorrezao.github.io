@@ -10,7 +10,7 @@ A **Software Developer** ...
 * CSS
 * JS
 * React.js
+* React Native
 * Node.js
-* Java
 * PHP
-* Etc...
+* Java

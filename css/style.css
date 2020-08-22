@@ -1,0 +1,54 @@
+/* spaces reset */
+html {
+  font-size: 10px;
+}
+
+/* box reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* images */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* body */
+.body {
+  height: 100vh;
+  background: #e5ebf0;
+  position: relative;
+}
+
+/* card */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: auto;
+  /* height: 48.5rem; */
+  width: 30rem;
+
+  background: #fff;
+  /* border-radius: 0.6rem; */
+  overflow: hidden;
+
+  box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.09);
+
+  padding: 2.4rem 2.4rem;
+}
+
+/* avatar */
+.avatar {
+  /* border-radius: 50%; */
+  overflow: hidden;
+  width: 100%;
+  /* margin: 3rem auto 1.8rem auto; */
+}
