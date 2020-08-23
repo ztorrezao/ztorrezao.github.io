@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 /* spaces reset */
 html {
   font-size: 10px;
@@ -23,6 +25,9 @@ img {
   height: 100vh;
   background: #e5ebf0;
   position: relative;
+
+  font-family: 'PT Sans', sans-serif;
+  color: #333;
 }
 
 /* card */
@@ -32,12 +37,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: auto;
-  /* height: 48.5rem; */
-  width: 30rem;
+  /* height: auto; */
+  height: 48.5rem;
+  width: 29.9rem;
 
   background: #fff;
-  /* border-radius: 0.6rem; */
+
   overflow: hidden;
 
   box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.09);
@@ -47,8 +52,6 @@ img {
 
 /* avatar */
 .avatar {
-  /* border-radius: 50%; */
-  overflow: hidden;
   width: 100%;
-  /* margin: 3rem auto 1.8rem auto; */
+  margin-bottom: 24rem;
 }
